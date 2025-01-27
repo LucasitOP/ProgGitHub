@@ -60,7 +60,8 @@ public double getCosteConsumo(int horas,double costeHora) {
 
 @Override
 public String toString() {
-	return "Electrodomestico [tipo=" + tipo + ", marca=" + marca + ", potencia=" + potencia + "]";
+	String cadena="Electrodomestico [tipo=\" + tipo + \", marca=\" + marca + \", potencia=\" + potencia + \"]";
+	return cadena;
 }
 
 

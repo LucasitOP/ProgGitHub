@@ -34,16 +34,14 @@ public class Incidencias {
 		
 	}
 	//constructor con los datos
-	public Incidencias(int puesto,String motivo,String estado) {
+	public Incidencias(int puesto,String motivo) {
 		this.puesto=puesto;
 		this.motivo=motivo;
-		this.estado=estado;
+		this.estado="PENDIENTE";
 	}
 	//Mostrará un listado con las incidencias existentes, el motivo y el estado de ellas.
 
-	public void listado() {
-		
-	}
+	
 	
 	
 }
