@@ -32,13 +32,13 @@ public class Dimension {
 	public void setLargo(int largo) {
 		this.largo = largo;
 	}
-	public double CalcularVolumen(double alto, double ancho, double largo) {
+	public double CalcularVolumen() {
 		return alto*ancho*largo;
 	}
 
 	@Override
 	public String toString() {
-		return "Dimension [alto=" + alto + ", ancho=" + ancho + ", largo=" + largo +", volumen="+CalcularVolumen(alto, ancho, largo)+ "]";
+		return "Dimension [alto=" + alto + ", ancho=" + ancho + ", largo=" + largo +", volumen="+CalcularVolumen()+ "]";
 	}
 	
 }
