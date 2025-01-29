@@ -25,10 +25,10 @@ public double getPrecio() {
 public void setPrecio(double precio) {
 	this.precio = precio;
 }
-public Dimension getObjeto() {
+public Dimension getDimension() {
 	return dimen;
 }
-public void setObjeto(Dimension objeto) {
+public void setDimension(Dimension objeto) {
 	this.dimen = objeto;
 }
 public Pokemon getPoke() {
@@ -39,7 +39,7 @@ public void setPoke(Pokemon poke) {
 }
 @Override
 public String toString() {
-	return "Figura [codigo=" + codigo + ", precio=" + precio + ", objeto=" + dimen + ", poke=" + poke + "]";
+	return "Figura [codigo=" + codigo + ", precio=" + precio + ", dimension=" + dimen + ", poke=" + poke + "]";
 }
 
 public void subirPrecio(double subida) {
