@@ -9,38 +9,8 @@ public class Estudiantes {
 		this.edad=edad;
 		this.calificaciones=calificaciones;
 	}
-	public Estudiantes() {
 
-	}
 
-	public Estudiantes(String nombre) {
-		this.nombre = nombre;
-
-	}
-
-	public String getNombre() {
-		return nombre;
-	}
-
-	public void setNombre(String nombre) {
-		this.nombre = nombre;
-	}
-
-	public int getEdad() {
-		return edad;
-	}
-
-	public void setEdad(int edad) {
-		this.edad = edad;
-	}
-
-	public int[] getCalificaciones() {
-		return calificaciones;
-	}
-
-	public void setCalificaciones(int[] calificaciones) {
-		this.calificaciones = calificaciones;
-	}
 	public static double media(int[]calificaciones) {
 		int divisor=0;
 		int sumador=0;

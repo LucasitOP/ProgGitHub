@@ -21,7 +21,7 @@ public class ManejadoraTareas {
 		CambiarEstado(sc, arraytareas);
 		MostrarCompletadas(arraytareas);
 		MostrarPendientes(arraytareas);
-		
+		EliminarTabla(sc,arraytareas);
 	}
 	public static void CambiarEstado(Scanner sc,Tareas[]tarea) {
 		System.out.println("Selecciona el id");
@@ -60,5 +60,21 @@ public class ManejadoraTareas {
 	}
 	//Metodo eliminar:
 	//Tenemos que crear un nuevo array en el que copiemos todos las tareas sin la que se quiera eliminar
+	public static void EliminarTabla(Scanner sc,Tareas[]tarea) {
+		System.out.println("Selecciona el id");
+		int compararid=sc.nextInt();
+		boolean encontrado=false;
+		for (int i=0;i<tarea.length;i++) {
+			if(compararid==tarea[i].getId()) {
+				encontrado=true;
+				tarea[i]=null;
+				System.out.println("Eliminada!");
+			}
+			
+		}
+		if (encontrado==false) {
+			System.out.println("No se ha encontrado ninguna coincidencia");
+		}
+	}
 
 }
