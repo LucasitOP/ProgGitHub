@@ -8,4 +8,12 @@ public Jugador(String nombre,String posicion,int numero) {
 	this.posicion=posicion;
 	this.numero=numero;
 }
+@Override
+public String toString() {
+	return "Jugador [nombre=" + nombre + ", posicion=" + posicion + ", numero=" + numero + "]";
+}
+public int getNumero() {
+	return numero;
+}
+
 }
