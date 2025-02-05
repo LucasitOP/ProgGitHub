@@ -3,10 +3,10 @@ package GestionDepartamento;
 import java.util.Arrays;
 
 public class Profesor {
-String nombre,apellido;
-String[]AsignaturasImparte;
+private String nombre,apellido;
+private Modulo []AsignaturasImparte;
 
-public Profesor(String nombre,String apellido,String[]AsignaturasImparte) {
+public Profesor(String nombre,String apellido,Modulo[]AsignaturasImparte) {
 	this.nombre=nombre;
 	this.apellido=apellido;
 	this.AsignaturasImparte=AsignaturasImparte;
