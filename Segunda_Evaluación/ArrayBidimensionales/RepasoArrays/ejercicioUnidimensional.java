@@ -6,10 +6,16 @@ public class ejercicioUnidimensional {
 		double ta[]= {3,2,5,1};
 		double tb[]= {93.23,3.5,8.24,4.5};
 		double tc[]= {0.0,0.0,3.2,1.8};
+		double [][]tba={{1,3,5,8},{0,4,-1,2},{1,10,1,1}};
+		double [][]tbb={{1,4,4},{0,-11,5}};
 		System.out.println(esMayor(tb,ta));
 		System.out.println(esMayor(ta, tb));
 		System.out.println(esMayor(tc, ta));
 		operarTabla(ta);
+		System.out.println();
+		columnaSumaMayor(tba);
+		System.out.println();
+		columnaSumaMayor(tbb);
 	}
 
 	private static boolean esMayor(double[] tb, double[] ta) {
@@ -41,6 +47,23 @@ public class ejercicioUnidimensional {
 		    System.out.print("["+nuevatabla[i]+"]");
 		}
 	}
-
+public static void columnaSumaMayor(double[][] tba ) {
+	double mayorcolumna=0;
+	double sumacadacolumna=0;
+	int posiciondelcontador=0;
+	int contador=-1;
+	for (int i=0;i<tba[0].length;i++) {
+		contador++;
+		sumacadacolumna=0;
+		for(int j=0;j<tba.length;j++) {
+			sumacadacolumna+=tba[j][i];
+			if(mayorcolumna<=sumacadacolumna) {
+				mayorcolumna=sumacadacolumna;
+				posiciondelcontador=contador;
+			}
+		}
+	}
+	System.out.println(posiciondelcontador);
+}
 }
 
