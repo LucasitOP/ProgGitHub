@@ -2,7 +2,7 @@ package RepasoArrays2;
 
 import java.io.IOException;
 import java.util.Scanner;
-
+//Falta pedir bebida y rellenar bebidas
 public class Bebidas {
 
 	public static void main(String[] args) throws IOException {
@@ -55,7 +55,7 @@ public class Bebidas {
 			switch(opcion) {
 			case 'M':MostrarBebidas(disponibles,precios,bebidas);
 				break;
-			case 'P':
+			case 'P':PedirBebida(sc, precios, bebidas);
 				break;
 			case 'R':
 				break;
